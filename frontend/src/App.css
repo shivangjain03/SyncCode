@@ -115,6 +115,8 @@ body{
     margin-top: 1rem;
     font-size: 1rem;
     color:white;
+    border:none;
+    border-radius: 4px;
   }
 }
 }
