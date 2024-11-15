@@ -2,18 +2,21 @@
   "name": "synccode",
   "version": "1.0.0",
   "main": "index.js",
-  "type":"module",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"node backend/index.js",
-    "dev":"nodemon backend/index.js"
+    "start": "node backend/index.js",
+    "build":"npm install && cd frontend && npm install && npm run build",
+    "dev": "nodemon backend/index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "axios": "^1.7.7",
     "express": "^4.21.1",
+    "http": "^0.0.1-security",
     "socket.io": "^4.8.1"
   },
   "devDependencies": {
